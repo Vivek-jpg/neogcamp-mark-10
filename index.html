@@ -4,14 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mark-10</title>
+    <title>mark-10 RegisterCash</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+        
+             background-image: linear-gradient(#11998e,#38ef7d,rgb(18, 219, 219));
+             background-repeat: no-repeat;
+             height: 100%;
+
+           
+
+
+
+        }
+        .container{
+            background-color: gray;
+            width: 50%;
+            height: 750px;
+            align-items: center;
+            padding: 50px;
+            margin: 0 340px;
+            border-radius: 5px;
+        }
+        .heading{
+            text-align: center;
+            color: honeydew;
+            font-size: 44px;
+            text-shadow: 2px 2px #353232;
+        }
+        .description{
+            align-content: center;
+            color: rgb(241, 241, 241);
+            font-size: 20px;
+            margin: 10px;
+            background-color: rgb(241, 118, 2);
+            border-radius: 3px;
+            padding: 5px;
+        }
+        .bill-amount{
+            align-content: center;
+            color: rgb(97, 175, 175);
+        }
+        .return{
+            background-color: rgb(241, 118, 2);
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            align-content: center;
+         
+
+        }
+
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="body">
-            
+        <h2 class="heading">Cash register </h2>
+        <p class="description">
+            this app show you .. you enter bill amount and enter the cash amount t will return the minimum notes .
+        </p>
+        <label for ="bill-amount">bill amount</label>
+        <input id="bill-amount" type="text" placeholder="enter bill amount">
+        <label for ="charge-given">enter the note</label>
+        <input id="charge-given" type="text" placeholder="enter note">
+        <button id="check-button">check</button>
+        <p id="error-message">please enter valid bill amount</p>
+        <table class="change-table">
+            <caption class="return">Return amount</caption>
+            <tr>
+                <th>number of notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+                <th>notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+        
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
