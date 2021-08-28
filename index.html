@@ -44,7 +44,13 @@
         }
         .bill-amount{
             align-content: center;
-            color: rgb(97, 175, 175);
+            color: rgb(255, 255, 255);
+
+        }
+        .cash-given{
+            align-content: center;
+            color: rgb(255, 255, 255);
+            align-items: flex-end;
         }
         .return{
             background-color: rgb(241, 118, 2);
@@ -59,6 +65,88 @@
          
 
         }
+        
+.input-label {
+  display: block;
+  font-size: large;
+  font-weight: 600;
+}
+
+#bill-amount{
+  font-size: 14px;
+  outline: #fff;
+  width: 450px;
+  height: 20px;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
+}
+#cash-given{font-size: 14px;
+  outline: #fff;
+  width: 450px;
+  height: 20px;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  margin-left: 93px;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
+    
+}
+
+#check-button {
+    margin: 20px;
+  background: rgb(241, 167, 5);
+  border: none;
+
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: rgb(48, 45, 45);
+  margin: auto;
+  display: block;
+}
+
+#error-message {
+  display: block;
+  font-size: larger;
+  margin: 1rem 0 0;
+}
+
+/* Table */
+table, th, td {
+  border: 1px solid rgb(94, 89, 89);
+  box-shadow: 2px 2px 8px 1.5px rgb(145, 155, 100);
+}
+.change-table {
+    background-color: rgb(148, 146, 146);
+    list-style-type: style none;;
+  width: 50%;
+  text-align: justify;
+  border-collapse: collapse;
+  margin: auto;
+  border-radius: 3px;
+}
+
+.no-of-notes {
+  margin: 1rem auto;
+  font-size: x-large;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+th,
+td {
+  border: 2px solid var(rgb(38, 39, 38));
+  width: 3px;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
 
     </style>
 </head>
@@ -68,11 +156,12 @@
         <p class="description">
             this app show you .. you enter bill amount and enter the cash amount t will return the minimum notes .
         </p>
-        <label for ="bill-amount">bill amount</label>
+        <label class ="bill-amount">bill amount</label>
         <input id="bill-amount" type="text" placeholder="enter bill amount">
-        <label for ="charge-given">enter the note</label>
-        <input id="charge-given" type="text" placeholder="enter note">
-        <button id="check-button">check</button>
+        <label class ="cash-given">enter the note</label>
+        <input id="cash-given" type="text" placeholder="enter note">
+        <div>
+        <button id="check-button">check</button></div>
         <p id="error-message">please enter valid bill amount</p>
         <table class="change-table">
             <caption class="return">Return amount</caption>
